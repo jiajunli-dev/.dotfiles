@@ -58,6 +58,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
 
+# Keymaps for this is available at https://github.com/junegunn/fzf-git.sh
+source ~/scripts/fzf-git.sh
+
 # Set up fzf key bindings and fuzzy completion
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
