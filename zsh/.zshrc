@@ -44,7 +44,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd z zsh)"
-eval "$(oh-my-posh init zsh --config $HOME/.ohmyposh.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.ohmyposh.json)"
 
 # Keymaps for this is available at https://github.com/junegunn/fzf-git.sh
 source ~/scripts/fzf-git.sh
