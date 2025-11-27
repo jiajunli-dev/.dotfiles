@@ -42,7 +42,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Shell integrations
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd z zsh)"
 eval "$(oh-my-posh init zsh --config $HOME/.ohmyposh.toml)"
 
